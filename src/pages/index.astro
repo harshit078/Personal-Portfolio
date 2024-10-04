@@ -1,0 +1,218 @@
+---
+import Link from '@components/link.svelte'
+import Base from '@layouts/base.astro'
+import Hero from '@sections/hero.svelte'
+import { Image } from 'astro:assets'
+
+import Socials from '@components/socials.astro'
+import me from '@images/me.jpeg'
+import ArrowUpRight from '~icons/lucide/arrow-up-right'
+import Trello from '@images/trello.jpeg'
+import Better from '@images/better.png'
+import Spotify from '@images/spotify.png'
+---
+
+<Base>
+  <Hero>
+		<Image src={me} alt="Me" />
+	</Hero>
+  <main
+	class="container prose prose-invert mt-32 prose-h1:font-serif
+	prose-h2:font-serif prose-h3:font-serif prose-p:font-medium
+	prose-a:no-underline prose-blockquote:font-serif prose-blockquote:text-2xl
+	prose-blockquote:not-italic prose-em:font-serif prose-em:font-light prose-img:rounded-xl"
+  >
+    <h2>Who am I</h2>
+
+    <p>
+      A 22 year old dev still figuring it out. Takes up new projects every month, Loves Frontend and sits in front of laptop to see bugs 🐛  and issues in console laptop  💻 
+      <br />
+      <br />
+      <em>Full Stack Developer</em>, <em>Open source contributor</em>,
+      <em>Web3 developer</em>, <em>Blockchain enthusiast</em>
+      <br />
+      <br />
+      I'm trying to build interactive and native webapps. I'm always learning and improving and I've put some of it below.
+    </p>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h3>
+          <Link
+	client:load
+	href="https://better-me-team-better-me-app-1emzyw.streamlit.app/"
+	class="transition-all hover:opacity-75"
+          >
+            <span class="inline-flex items-center gap-1">
+              <span
+	class="relative inline-block after:absolute after:bottom-[1px]
+									after:left-1/2 after:z-[-1] after:h-1 after:w-full after:-translate-x-1/2
+									after:border-b-[6px] after:border-[hsla(34.016,91.598%,65.164%,0.5)]"
+              >
+                AI Journal
+              </span>
+              <ArrowUpRight class="size-4" />
+            </span>
+            <Image slot="img" src={Better} alt="" />
+          </Link>
+        </h3>
+        <p>
+		A Notion app with emotions in it. An open source AI-powered journal app which tracks your mood throughout days and months and gives a detailed summary.
+        </p>
+      </li>
+      <li>
+        <h3>
+          <Link
+	client:load
+	href="https://github.com/harshit078/Trello-task-management?tab=readme-ov-file"
+	class="transition-all hover:opacity-75"
+          >
+            <span class="inline-flex items-center gap-1">
+              <span
+	class="relative inline-block after:absolute after:bottom-[1px]
+									after:left-1/2 after:z-[-1] after:h-1 after:w-full after:-translate-x-1/2
+									after:border-b-[6px] after:border-[hsla(14.864,100%,49.771%,0.5)]"
+              >
+                Dynamic Spotify
+              </span>
+              <ArrowUpRight class="size-4" />
+            </span>
+            <Image slot="img" src={Spotify} alt="" />
+          </Link>
+        </h3>
+        <p>
+		  A dynamic Spotify clone with more color and better UI
+		
+        </p>
+      </li>
+      <li>
+        <h3>
+          <Link
+	client:load
+	href="https://crework-assign.vercel.app/"
+	class="transition-all hover:opacity-75"
+          >
+            <span class="inline-flex items-center gap-1">
+              <span
+	class="relative inline-block after:absolute after:bottom-[1px]
+									after:left-1/2 after:z-[-1] after:h-1 after:w-full after:-translate-x-1/2
+									after:border-b-[6px] after:border-[#1D9BF0]"
+              >
+                Trello Management
+              </span>
+              <ArrowUpRight class="size-4" />
+            </span>
+            <Image slot="img" src={Trello} alt="" />
+          </Link>
+        </h3>
+        <p>
+		A headless CMS for Trello with more features and better UI.
+        </p>
+      </li>
+    </ul>
+
+
+	<h2>Articles/Writings ✍️ </h2>
+
+	<ul>
+	  <li>
+		<a
+		  href="https://harshitsingh467.medium.com/typescript-nullchecks-and-how-can-it-help-you-8fb1123f4432"
+	class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+	class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+	href="https://svelte-radial-menu.vercel.app/"
+		  class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+	href="https://svelte-radial-menu.vercel.app/"
+		>
+		  Typescript NULL Checks
+		</a>
+		<p class="text-sm">
+		  What are NULL checks and how they can improve the robustness of your code.
+		</p>
+	  </li>
+	  <li>
+		<a
+		  href="https://harshitsingh467.medium.com/bank-fraud-detection-using-modern-technology-such-as-neo4js-and-networkx-7df708d655b9"
+	class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+	class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+	href="https://codeverter.vercel.app/"
+		  class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+	href="https://codeverter.vercel.app/"
+		>
+		  Bank Fraud Detection Using Modern Technology
+		</a>
+		<p class="text-sm">
+		  Exploring the use of Neo4j and NetworkX in detecting fraudulent activities.
+		</p>
+	  </li>
+	  <li>
+		<a
+		  href="https://harshitsingh467.medium.com/bitonic-sort-and-parallel-computing-89c2c7a76ee6"
+		  class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+		>
+		  Bitonic Sort and Parallel Computing
+		</a>
+		<p class="text-sm">
+		  A deep dive into Bitonic sorting and its applications in parallel computing.
+		</p>
+	  </li>
+	</ul>
+
+	<h2>Accolades 🥇  </h2>
+	<li>
+		<em>Competitive Coding</em>
+
+		<ul>
+			<li>Codechef: 3-Stars</li>
+			<li>Leetcode: 3/5 Stars, Solved 350+ Questions</li>
+		</ul>
+	</li>
+	<li>
+		<em>Co-Curricular Achievements</em>
+		<ul>
+			<li>Selected for HackMIT 2021 out of 2000 students internationally</li>
+			<li>Selected for HackHarvard (2022), CalHacks, HackGT, HackYale, and HackPrinceton in 2021</li>
+			<li>Secured 18th team rank out of 78 teams in HackDTU</li>
+			<li>Awarded Best Use of Auth0 in YaleHacks 2021</li>
+			<li>Received the Udacity Bertelsmann Scholarship in 2021</li>
+		</ul>
+	</li>
+
+    <h2>Work experience</h2>
+
+			<ul>
+				<li>
+					At <em>Fyle</em>, I worked as a <em>Software Developer</em> focused on enhancing web application stability and reducing technical debt.
+					<br />
+					I significantly decreased Sentry errors by <b>50%</b>within one month by following best practices and implementing TypeScript's Strict mode.
+					My work involved optimizing the main UI, ensuring that every interface had a smooth, polished user experience with beautiful animations and interactions.
+					<br />
+					<b>Tech Stack:</b><em>Vue.js, Tailwind CSS, Vite, Docker, D3.js, Svelte, ReactJS, REST API</em>
+				</li>
+				</li>
+				<li>
+					At <em>Eder Labs</em>, I worked as a <em>Frontend Developer Intern</em>, optimizing the web app and leading the development of visually dynamic sections of the site.
+					<br />
+					My journey into <em>Open Source</em> began here, as I actively contributed to projects, collaborated with the community, and embraced the power of innovation. 
+					This experience inspired me to create and propose solutions for various open-source initiatives.
+					<br />
+					<b>Tech Stack:</b><em>Vue.js, Tailwind CSS, Vite, Docker, D3.js, Svelte, ReactJS, REST API</em>
+				</li>
+				<li>
+					I've done some <em>freelancing</em> as well, but nothing of major note.
+				</li>
+			</ul>
+
+    <h2>Socials</h2>
+
+		<Socials />
+
+    <h2>Extra</h2>
+
+    <p>
+      <em>Psst.</em> This site is a work in progress as more contributions and writings come. Expect this to change quite
+      a lot.
+    </p>
+  </main>
+</Base>
