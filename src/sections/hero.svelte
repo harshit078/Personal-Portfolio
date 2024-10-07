@@ -54,7 +54,7 @@
 	.avatar {
 		clip-path: inset(50% 50% 50% 50% round 200px);
 		rotate: 8deg;
-		animation: avatar-animate 1.2s 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+		animation: avatar-animate 0.9s 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 	}
 
 	.avatar[data-disable-anim] {
