@@ -1,7 +1,7 @@
 import type { Stores, StoresValues } from 'svelte/store'
 import { derived } from 'svelte/store'
 
-import { onDestroy, onMount } from 'svelte'
+import { onDestroy } from 'svelte'
 
 function noop() {}
 
