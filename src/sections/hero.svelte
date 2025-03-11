@@ -28,8 +28,8 @@
 	{/if}
 
 	<div
-		class='avatar absolute right-8 top-8 w-[140px] overflow-hidden rounded-xl sm:w-[200px]
-			xl:right-[10px] xl:top-[120px] xl:w-[430px]'
+		class='avatar absolute right-8 top-8 w-[90px] overflow-hidden rounded-full sm:w-[200px]
+			xl:right-[10px] xl:top-[120px] xl:w-[380px]'
 		data-disable-anim={disableAnim ? '' : undefined}
 	>
 		<slot />
