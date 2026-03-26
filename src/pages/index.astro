@@ -7,7 +7,6 @@ import { Image } from "astro:assets";
 import Socials from "@components/socials.astro";
 import me from "@images/me.jpeg";
 import ArrowUpRight from "~icons/lucide/arrow-up-right";
-import Trello from "@images/trello.jpeg";
 import Better from "@images/better.png";
 import EmailGPT from "@images/EmailGPT.png";
 import inagify from "@images/spotify.png";
@@ -15,7 +14,7 @@ import inagify from "@images/spotify.png";
 
 <Base>
   <Hero>
-    <Image src={me} alt="Me" />
+    <Image src={me} alt="Me" class="h-full w-full object-cover" />
   </Hero>
   <main
     class="container prose prose-invert mt-32 prose-h1:font-serif
@@ -25,263 +24,388 @@ import inagify from "@images/spotify.png";
   >
     <h2>Who am I</h2>
 
-    <p>
-      A 22 year old dev still figuring it out. Takes up new projects every
-      month, Loves Frontend and sits in front of laptop to see bugs 🐛 and
-      issues in console laptop 💻
-      <br />
-      <br />
-      <em>Full Stack Developer</em>, <em>Open source contributor</em>,
-      <em>Web3 developer</em>, <em>Blockchain enthusiast</em>
-      <br />
-      <br />
-      I'm trying to build interactive and native webapps. I'm always learning and
-      improving and I've put some of it below.
-    </p>
+    I’m a 24-year-old Software / Full Stack Engineer who enjoys turning ideas
+    into real, working products. Still figuring things out—but that’s half the
+    fun. I spend most of my time building, breaking, and rebuilding things on
+    the web. If there’s a bug, I will find it… eventually 😄. And yes, my
+    console and I have a very complicated relationship 🐛💻
 
-    <h2>Projects</h2>
-    <ul>
-		<li>
-			<h3>
-			  <Link
-				client:load
-				href="https://inagify.vercel.app/"
-				class="transition-all hover:opacity-75"
-			  >
-				<span class="inline-flex items-center gap-1">
-				  <span
-					class="relative inline-block after:absolute after:bottom-[1px]
+    <br /><br />
+
+    <em>Full Stack Engineer</em> • <em>Frontend Enthusiast</em> •
+    <em>Open Source Contributor</em> • <em>Web3 Builder</em> • <em
+      >Blockchain Curious</em
+    > • <em>AI Engineer</em>
+
+    <br /><br />
+
+    What I’m about I like shipping things fast 🚀 ideas > perfection Turning
+    “this might be cool” into “this actually works” Clean UI + smooth UX =
+    non-negotiable Debugging late at night > partying (most days 😅) I Google… a
+    lot (and I’m proud of it) Big fan of side projects that may or may not see
+    the light of day Learning something new every week (or at least trying to)
+
+    <br /><br />
+
+    Current vibe Building interactive, almost-native web apps Exploring Web3 and
+    blockchain beyond the hype Contributing to open source when something
+    excites me Obsessing over performance, tiny details, and smooth animations
+
+    <br /><br />
+
+    I’m always learning, experimenting, and leveling up. If you’ve got something
+    interesting to build I’m in.
+
+    <h2>Open Source Contributions 🥇</h2>
+    <li>
+      <em>So Far the contributions have been made to -</em>
+
+      <ul>
+        <li>
+          <a
+            href="https://github.com/twentyhq/twenty/pulls?q=is%3Apr+author%3Aharshit078+is%3Aclosed"
+            class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+            >Twenty(YC23)</a
+          > — Contributed to the Twenty, helping improve Frontend related bugs and
+          implementing core-team features.
+        </li>
+        <li>
+          <a
+            href="https://github.com/getsentry/sentry-javascript/pulls?q=is%3Apr+author%3Aharshit078+is%3Aclosed"
+            class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+            >SentryJS</a
+          > — Contributed to the JavaScript SDK, helping improve error tracking and
+          performance monitoring for web applications.
+        </li>
+        <li>
+          <a
+            href="https://github.com/middlewarehq/middleware/pulls/harshit078"
+            class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+            >MiddlewareHQ</a
+          > — Contributed to the engineering metrics platform, improving developer
+          productivity insights and DORA metrics tracking.
+        </li>
+        <li>
+          <a
+            href="https://github.com/potpie-ai/potpie/pulls?q=is%3Apr+author%3Aharshit078+is%3Aclosed"
+            class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+            >PotpieAI</a
+          > — Contributed to the AI-powered code review and codebase understanding
+          platform.
+        </li>
+        <li>
+          <a
+            href="https://posthog.com/"
+            class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+            >PostHog</a
+          > — Contributed to the open-source product analytics platform, helping teams
+          understand user behavior.
+        </li>
+        <li>
+          <a
+            href="https://github.com/CircuitVerse/CircuitVerse/pulls/harshit078"
+            class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+            >CircuitVerse</a
+          > — Contributed to the open-source digital circuit simulator used by students
+          and educators worldwide.
+        </li>
+        <li>
+          <a
+            href="https://cal.com/"
+            class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+            >Cal.com</a
+          > — Contributed to the open-source scheduling infrastructure, improving
+          the scheduling experience for users and developers.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h2>Accolades 🥇</h2>
+      <li>
+        <em>Competitive Coding</em>
+
+        <ul>
+          <li>Codechef: 3-Stars</li>
+          <li>Leetcode: 3/5 Stars, Solved 350+ Questions</li>
+        </ul>
+      </li>
+      <li>
+        <em>Co-Curricular Achievements</em>
+        <ul>
+          <li>
+            Top 1% contributor at <a
+              ><a href="https://twenty.com/contributors/harshit078"
+                >Twenty(YC23)</a
+              ></a
+            >
+            <li>
+              Selected for HackMIT 2021 out of 2000 students internationally
+            </li>
+            <li>
+              Selected for HackHarvard (2022), CalHacks, HackGT, HackYale, and
+              HackPrinceton in 2021
+            </li>
+            <li>Secured 18th team rank out of 78 teams in HackDTU</li>
+            <li>Awarded Best Use of Auth0 in YaleHacks 2021</li>
+            <li>Received the Udacity Bertelsmann Scholarship in 2021</li>
+          </li>
+        </ul>
+        <h2>Work experience</h2>
+
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <h3>
+              <Link
+                client:load
+                href="https://inagify.vercel.app/"
+                class="transition-all hover:opacity-75"
+              >
+                <span class="inline-flex items-center gap-1">
+                  <span
+                    class="relative inline-block after:absolute after:bottom-[1px]
 										after:left-1/2 after:z-[-1] after:h-1 after:w-full after:-translate-x-1/2
 										after:border-b-[6px] after:border-[hsla(120,95%,59%,1)]"
-				  >
-					Inagify
-				  </span>
-				  <ArrowUpRight class="size-4" />
-				</span>
-				<Image slot="img" src={inagify} alt="" />
-			  </Link>
-			</h3>
-			<p>
-				- Inagify is a creative application that allows users to seamlessly add stylized text behind images and videos. Built with Next.js, Tailwind CSS, and Supabase, the platform offers a user-friendly interface for designers, content creators, and marketers to generate visually engaging content.
-				<br />
-				- Built with Next.js, Tailwind CSS, Typescript,  Vercel, Stripe, Supabase,Framer
-				<br />
-				- Users can upload an image or video, apply text with various fonts, colors, and styling options, and position it behind the media. The platform also supports multi-color gradients, animations, and custom typography to enhance the final output. Supabase handles user authentication, storage, and database functionalities, ensuring a smooth experience.
-			  </p>
-		  </li>
-      <li>
-        <h3>
-          <Link
-            client:load
-            href="https://better-me-team-better-me-app-1emzyw.streamlit.app/"
-            class="transition-all hover:opacity-75"
-          >
-            <span class="inline-flex items-center gap-1">
-              <span
-                class="relative inline-block after:absolute after:bottom-[1px]
+                  >
+                    Inagify
+                  </span>
+                  <ArrowUpRight class="size-4" />
+                </span>
+                <Image slot="img" src={inagify} alt="" />
+              </Link>
+            </h3>
+            <p>
+              - Inagify is a creative application that allows users to
+              seamlessly add stylized text behind images and videos. Built with
+              Next.js, Tailwind CSS, and Supabase, the platform offers a
+              user-friendly interface for designers, content creators, and
+              marketers to generate visually engaging content.
+              <br />
+              - Built with Next.js, Tailwind CSS, Typescript, Vercel, Stripe, Supabase,Framer
+              <br />
+              - Users can upload an image or video, apply text with various fonts,
+              colors, and styling options, and position it behind the media. The platform
+              also supports multi-color gradients, animations, and custom typography
+              to enhance the final output. Supabase handles user authentication, storage,
+              and database functionalities, ensuring a smooth experience.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <Link
+                client:load
+                href="https://better-me-team-better-me-app-1emzyw.streamlit.app/"
+                class="transition-all hover:opacity-75"
+              >
+                <span class="inline-flex items-center gap-1">
+                  <span
+                    class="relative inline-block after:absolute after:bottom-[1px]
 									after:left-1/2 after:z-[-1] after:h-1 after:w-full after:-translate-x-1/2
 									after:border-b-[6px] after:border-[hsla(34.016,91.598%,65.164%,0.5)]"
+                  >
+                    AI Journal
+                  </span>
+                  <ArrowUpRight class="size-4" />
+                </span>
+                <Image slot="img" src={Better} alt="" />
+              </Link>
+            </h3>
+            <p>
+              - A Notion app with emotions in it. An open source AI-powered
+              journal app which tracks your mood throughout days and months and
+              gives a detailed summary.
+              <br />
+            </p>
+          </li>
+          <li>
+            <h3>
+              <Link
+                client:load
+                href="https://email-gpt-gamma.vercel.app/"
+                class="transition-all hover:opacity-75"
               >
-                AI Journal
-              </span>
-              <ArrowUpRight class="size-4" />
-            </span>
-            <Image slot="img" src={Better} alt="" />
-          </Link>
-        </h3>
-        <p>
-          - A Notion app with emotions in it. An open source AI-powered journal
-          app which tracks your mood throughout days and months and gives a
-          detailed summary.
-          <br />
-        </p>
-      </li>
-      <li>
-        <h3>
-          <Link
-            client:load
-            href="https://email-gpt-gamma.vercel.app/"
-            class="transition-all hover:opacity-75"
-          >
-            <span class="inline-flex items-center gap-1">
-              <span
-                class="relative inline-block after:absolute after:bottom-[1px]
+                <span class="inline-flex items-center gap-1">
+                  <span
+                    class="relative inline-block after:absolute after:bottom-[1px]
 									after:left-1/2 after:z-[-1] after:h-1 after:w-full after:-translate-x-1/2
 									after:border-b-[6px] after:border-[hsla(14.864,100%,49.771%,0.5)]"
-              >
-                EmailGPT
-              </span>
-              <ArrowUpRight class="size-4" />
-            </span>
-            <Image slot="img" src={EmailGPT} alt="" />
-          </Link>
-        </h3>
-        <p>
-          - Developed a chatbot powered by the Mixtral 8x7B model which helps
-          enhance email communication by suggesting better responses and email
-          templates.
-          <br />
-          - Built with Next.js, Tailwind CSS, Vercel, Mixtral API
-          <br />
-          - Successfully converted cold emails leads and increased response rates
-          by 20%.
-        </p>
-      </li>
-      <li>
-        <h3>
-          <Link
-            client:load
-            href="https://crework-assign.vercel.app/"
-            class="transition-all hover:opacity-75"
-          >
-            <span class="inline-flex items-center gap-1">
-              <span
-                class="relative inline-block after:absolute after:bottom-[1px]
-									after:left-1/2 after:z-[-1] after:h-1 after:w-full after:-translate-x-1/2
-									after:border-b-[6px] after:border-[#1D9BF0]"
-              >
-                - Trello Management
-              </span>
-              <ArrowUpRight class="size-4" />
-            </span>
-            <Image slot="img" src={Trello} alt="" />
-          </Link>
-        </h3>
-        <p>
-          - A headless CMS for Trello with more features and better UI.
-          <br />
-          - Built with NextJS with TypeScript & Node.js with Express, MongoDB,Redux
-          and Tailwind
-        </p>
-      </li>
-    </ul>
-
-    <h2>Accolades 🥇</h2>
-    <li>
-      <em>Competitive Coding</em>
-
-      <ul>
-        <li>Codechef: 3-Stars</li>
-        <li>Leetcode: 3/5 Stars, Solved 350+ Questions</li>
-      </ul>
-    </li>
-    <li>
-      <em>Co-Curricular Achievements</em>
-      <ul>
+                  >
+                    EmailGPT
+                  </span>
+                  <ArrowUpRight class="size-4" />
+                </span>
+                <Image slot="img" src={EmailGPT} alt="" />
+              </Link>
+            </h3>
+            <p>
+              - Developed a chatbot powered by the Mixtral 8x7B model which
+              helps enhance email communication by suggesting better responses
+              and email templates.
+              <br />
+              - Built with Next.js, Tailwind CSS, Vercel, Mixtral API
+              <br />
+              - Successfully converted cold emails leads and increased response rates
+              by 20%.
+            </p>
+          </li>
+        </ul>
         <li>
-          Top 1% contributor at <a
-            ><a href="https://twenty.com/contributors/harshit078"
-              >Twenty(YC23)</a
-            ></a
-          >
+          <em>Co-Curricular Achievements</em>
+          <ul>
+            <li>
+              Top 1% contributor at <a
+                ><a href="https://twenty.com/contributors/harshit078"
+                  >Twenty(YC23)</a
+                ></a
+              >
+              <li>
+                Selected for HackMIT 2021 out of 2000 students internationally
+              </li>
+              <li>
+                Selected for HackHarvard (2022), CalHacks, HackGT, HackYale, and
+                HackPrinceton in 2021
+              </li>
+              <li>Secured 18th team rank out of 78 teams in HackDTU</li>
+              <li>Awarded Best Use of Auth0 in YaleHacks 2021</li>
+              <li>Received the Udacity Bertelsmann Scholarship in 2021</li>
+            </li>
+          </ul>
+          <h2>Work experience</h2>
+
           <li>
-            Selected for HackMIT 2021 out of 2000 students internationally
+            <em
+              ><a
+                class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+                href="https://tryfuse.ai/">FuseAI</a
+              ></em
+            > — Worked as a <em>Full Stack Engineer</em>, focusing on building
+            scalable, high-performance web applications with a strong emphasis
+            on user experience and system reliability.
+            <br />
+            - Led the migration of the core application to <b>Next.js</b> and developed
+            pixel-perfect, accessible UI using the <b>shadcn/ui</b> design system.
+            Integrated secure payment flows with <b>Stripe</b> and implemented end-to-end
+            AWS integrations, including <b>Cognito authentication</b> and <b
+              >Amplify</b
+            >.
+            <br />
+            - Built a dynamic, template-driven agent creation system with advanced
+            filtering (company size, industry, region, and profiles), enabling highly
+            customizable workflows.
+            <br />
+            Implemented real-time AI chat using <b>WebSockets</b>, supporting
+            streaming responses and persistent, thread-based conversations.
+            <br />
+            - Improved data handling and performance using <b>React Query</b> for
+            caching, retries, and background synchronization.
+            <br />
+            <b>Tech Stack:</b>
+            <em>
+              Next.js, React, TypeScript, shadcn/ui, Tailwind CSS, React Query,
+              WebSockets, AWS (Cognito, Amplify), Stripe, Zod
+            </em>
           </li>
           <li>
-            Selected for HackHarvard (2022), CalHacks, HackGT, HackYale, and
-            HackPrinceton in 2021
+            At <em
+              ><a
+                class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+                href="https://www.fylehq.com/">Fyle</a
+              ></em
+            >, I worked as a <em>Software Developer</em> focused on enhancing web
+            application stability and reducing technical debt.
+            <br />
+            I significantly decreased Sentry errors by <b>50%</b>within one
+            month by following best practices and implementing TypeScript's
+            Strict mode. My work involved optimizing the main UI, ensuring that
+            every interface had a smooth, polished user experience with
+            beautiful animations and interactions.
+            <br />
+            <b>Tech Stack:</b><em
+              >Vue.js, Tailwind CSS, Vite, Docker, D3.js, Svelte, ReactJS, REST
+              API</em
+            >
           </li>
-          <li>Secured 18th team rank out of 78 teams in HackDTU</li>
-          <li>Awarded Best Use of Auth0 in YaleHacks 2021</li>
-          <li>Received the Udacity Bertelsmann Scholarship in 2021</li>
+          <li>
+            At <em>Eder Labs</em>, I worked as a <em
+              >Frontend Developer Intern</em
+            >, optimizing the web app and leading the development of visually
+            dynamic sections of the site.
+            <br />
+            My journey into <em>Open Source</em> began here, as I actively contributed
+            to projects, collaborated with the community, and embraced the power of
+            innovation. This experience inspired me to create and propose solutions
+            for various open-source initiatives.
+            <br />
+            <b>Tech Stack:</b><em
+              >Vue.js, Tailwind CSS, Vite, Docker, D3.js, Svelte, ReactJS, REST
+              API</em
+            >
+          </li>
+          <li>
+            I've done some <em>freelancing</em> as well, but nothing of major note.
+          </li>
         </li>
-      </ul>
-      <h2>Work experience</h2>
 
-      <ul>
-        <li>
-          At <em>Fyle</em>, I worked as a <em>Software Developer</em> focused on
-          enhancing web application stability and reducing technical debt.
-          <br />
-          I significantly decreased Sentry errors by <b>50%</b>within one month
-          by following best practices and implementing TypeScript's Strict mode.
-          My work involved optimizing the main UI, ensuring that every interface
-          had a smooth, polished user experience with beautiful animations and
-          interactions.
-          <br />
-          <b>Tech Stack:</b><em
-            >Vue.js, Tailwind CSS, Vite, Docker, D3.js, Svelte, ReactJS, REST
-            API</em
-          >
-        </li>
-      </ul>
-      <li>
-        At <em>Eder Labs</em>, I worked as a <em>Frontend Developer Intern</em>,
-        optimizing the web app and leading the development of visually dynamic
-        sections of the site.
-        <br />
-        My journey into <em>Open Source</em> began here, as I actively contributed
-        to projects, collaborated with the community, and embraced the power of innovation.
-        This experience inspired me to create and propose solutions for various open-source
-        initiatives.
-        <br />
-        <b>Tech Stack:</b><em
-          >Vue.js, Tailwind CSS, Vite, Docker, D3.js, Svelte, ReactJS, REST API</em
-        >
-      </li>
-      <li>
-        I've done some <em>freelancing</em> as well, but nothing of major note.
+        <h2>Articles/Writings ✍️</h2>
+
+        <ul>
+          <li>
+            <a
+              href="https://harshitsingh467.medium.com/typescript-nullchecks-and-how-can-it-help-you-8fb1123f4432"
+              class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+              class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+              href="https://svelte-radial-menu.vercel.app/"
+              class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+              href="https://svelte-radial-menu.vercel.app/"
+            >
+              Typescript NULL Checks
+            </a>
+            <p class="text-sm">
+              What are NULL checks and how they can improve the robustness of
+              your code.
+            </p>
+          </li>
+          <li>
+            <a
+              href="https://harshitsingh467.medium.com/bank-fraud-detection-using-modern-technology-such-as-neo4js-and-networkx-7df708d655b9"
+              class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+              class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+              href="https://codeverter.vercel.app/"
+              class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+              href="https://codeverter.vercel.app/"
+            >
+              Bank Fraud Detection Using Modern Technology
+            </a>
+            <p class="text-sm">
+              Exploring the use of Neo4j and NetworkX in detecting fraudulent
+              activities.
+            </p>
+          </li>
+          <li>
+            <a
+              href="https://harshitsingh467.medium.com/bitonic-sort-and-parallel-computing-89c2c7a76ee6"
+              class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
+            >
+              Bitonic Sort and Parallel Computing
+            </a>
+            <p class="text-sm">
+              A deep dive into Bitonic sorting and its applications in parallel
+              computing.
+            </p>
+          </li>
+        </ul>
+
+        <h2>Socials</h2>
+
+        <Socials />
+
+        <h2>Extra</h2>
+
+        <p>
+          <em>Psst.</em> This site is a work in progress as more contributions and
+          writings come. Expect this to change quite a lot.
+        </p>
       </li>
     </li>
-
-    <h2>Articles/Writings ✍️</h2>
-
-    <ul>
-      <li>
-        <a
-          href="https://harshitsingh467.medium.com/typescript-nullchecks-and-how-can-it-help-you-8fb1123f4432"
-          class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
-          class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
-          href="https://svelte-radial-menu.vercel.app/"
-          class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
-          href="https://svelte-radial-menu.vercel.app/"
-        >
-          Typescript NULL Checks
-        </a>
-        <p class="text-sm">
-          What are NULL checks and how they can improve the robustness of your
-          code.
-        </p>
-      </li>
-      <li>
-        <a
-          href="https://harshitsingh467.medium.com/bank-fraud-detection-using-modern-technology-such-as-neo4js-and-networkx-7df708d655b9"
-          class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
-          class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
-          href="https://codeverter.vercel.app/"
-          class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
-          href="https://codeverter.vercel.app/"
-        >
-          Bank Fraud Detection Using Modern Technology
-        </a>
-        <p class="text-sm">
-          Exploring the use of Neo4j and NetworkX in detecting fraudulent
-          activities.
-        </p>
-      </li>
-      <li>
-        <a
-          href="https://harshitsingh467.medium.com/bitonic-sort-and-parallel-computing-89c2c7a76ee6"
-          class="border-b-2 border-white font-serif font-light leading-none transition hover:opacity-75"
-        >
-          Bitonic Sort and Parallel Computing
-        </a>
-        <p class="text-sm">
-          A deep dive into Bitonic sorting and its applications in parallel
-          computing.
-        </p>
-      </li>
-    </ul>
-
-    <h2>Socials</h2>
-
-    <Socials />
-
-    <h2>Extra</h2>
-
-    <p>
-      <em>Psst.</em> This site is a work in progress as more contributions and writings
-      come. Expect this to change quite a lot.
-    </p>
-  </main>
-</Base>
+  </main></Base
+>

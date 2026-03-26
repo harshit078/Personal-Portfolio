@@ -28,8 +28,8 @@
 	{/if}
 
 	<div
-		class='avatar absolute right-8 top-8 w-[90px] overflow-hidden rounded-full sm:w-[200px]
-			xl:right-[10px] xl:top-[120px] xl:w-[380px]'
+		class='avatar absolute right-8 top-8 aspect-square w-[90px] overflow-hidden rounded-full sm:w-[240px]
+			xl:right-[10px] xl:top-[120px] xl:w-[460px]'
 		data-disable-anim={disableAnim ? '' : undefined}
 	>
 		<slot />
@@ -42,17 +42,17 @@
 <style>
 	@keyframes avatar-animate {
 		0% {
-			clip-path: inset(50% 50% 50% 50% round 200px);
+			clip-path: inset(50% 50% 50% 50% round 50%);
 			rotate: 8deg;
 		}
 		100% {
-			clip-path: inset(0% 0% 0% 0% round 200px);
+			clip-path: inset(0% 0% 0% 0% round 50%);
 			rotate: 0deg;
 		}
 	}
 
 	.avatar {
-		clip-path: inset(50% 50% 50% 50% round 200px);
+		clip-path: inset(50% 50% 50% 50% round 50%);
 		rotate: 8deg;
 		animation: avatar-animate 0.9s 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 	}
